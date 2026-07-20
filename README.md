@@ -14,6 +14,7 @@
 - 建立共用 RWD 安全基線，改善手機版水平溢位與版面跑版。
 - 在首頁每張卡片加入「風格說明」與可複製的「AI Prompt」。
 - 區分視覺風格、Landing Page 模式、資料介面與產品設計模式，避免把功能類型誤認為視覺風格。
+- 提供可供 agent 搜尋的 JSON catalog，但不把現有 57 筆內容當成風格白名單。
 - 新增完整性與 RWD 自動檢查，驗證 57 個頁面、首頁卡片、連結與操作。
 
 ## 專案定位
@@ -120,9 +121,12 @@ cd ui-ref-library
 
 ```text
 ui-ref-library/
+├── catalog/
+│   └── ui-references.json     # 供 agent 搜尋的 57 筆參考資料
 ├── index.html                 # 首頁索引
 ├── README.md                  # 專案說明
 ├── scripts/
+│   ├── catalog.mjs            # 建立、搜尋與驗證 catalog
 │   ├── check-library.mjs      # 內容與連結完整性檢查
 │   ├── check-rwd.mjs          # RWD 與首頁互動檢查
 │   └── style-card-guides.js   # 風格說明、Prompt 與對話框互動
@@ -136,6 +140,12 @@ ui-ref-library/
 ## 自動檢查
 
 ```bash
+# catalog 與首頁風格說明保持一致
+node scripts/catalog.mjs check
+
+# 搜尋適合專業高密度 Dashboard 的參考
+node scripts/catalog.mjs search "專業 高密度 dashboard" --limit=4
+
 # 連結、標題、頁碼、metadata 與基本結構
 node scripts/check-library.mjs
 
