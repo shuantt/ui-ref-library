@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutalism - UI Style #04</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'Space Mono', monospace; }
+    </style>
+</head>
+<body class="bg-yellow-400 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white border-b-4 border-black z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-black font-bold hover:bg-black hover:text-white px-2 transition-none">[BACK]</a>
+            <span class="font-black text-xl">#04 BRUTALISM</span>
+            <span class="mono text-sm">GENERAL</span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-12 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white border-4 border-black p-8">
+                <h1 class="text-8xl font-black leading-none mb-4">RAW.<br/>BOLD.<br/>HONEST.</h1>
+                <p class="text-xl mono">No polish. No pretense. Just pure, unfiltered design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="py-12 px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-3 gap-4">
+            <div class="bg-blue-600 border-4 border-black p-6 text-white">
+                <span class="mono text-sm">001</span>
+                <h3 class="text-2xl font-black mt-2">HIGH CONTRAST</h3>
+                <p class="mono text-sm mt-2">Primary colors. Black borders. No gradients.</p>
+            </div>
+            <div class="bg-red-500 border-4 border-black p-6 text-white">
+                <span class="mono text-sm">002</span>
+                <h3 class="text-2xl font-black mt-2">BOLD TYPE</h3>
+                <p class="mono text-sm mt-2">Default fonts. Heavy weights. All caps.</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6">
+                <span class="mono text-sm">003</span>
+                <h3 class="text-2xl font-black mt-2">VISIBLE GRID</h3>
+                <p class="mono text-sm mt-2">Show the structure. Embrace the layout.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="py-12 px-4 bg-black">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-white font-black text-4xl mb-8">BUTTONS</h2>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-yellow-400 text-black border-4 border-white px-8 py-4 font-black text-xl hover:bg-white transition-none cursor-pointer">PRIMARY</button>
+                <button class="bg-blue-600 text-white border-4 border-white px-8 py-4 font-black text-xl hover:bg-blue-800 transition-none cursor-pointer">SECONDARY</button>
+                <button class="bg-red-500 text-white border-4 border-white px-8 py-4 font-black text-xl hover:bg-red-700 transition-none cursor-pointer">DANGER</button>
+                <button class="bg-black text-white border-4 border-white px-8 py-4 font-black text-xl hover:bg-white hover:text-black transition-none cursor-pointer">OUTLINE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colors -->
+    <section class="py-12 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-black text-4xl mb-8 border-b-4 border-black pb-2">COLOR PALETTE</h2>
+            <div class="grid grid-cols-5 gap-4">
+                <div>
+                    <div class="h-24 bg-red-500 border-4 border-black"></div>
+                    <p class="mono text-sm mt-2">#FF0000<br/>RED</p>
+                </div>
+                <div>
+                    <div class="h-24 bg-blue-600 border-4 border-black"></div>
+                    <p class="mono text-sm mt-2">#0000FF<br/>BLUE</p>
+                </div>
+                <div>
+                    <div class="h-24 bg-yellow-400 border-4 border-black"></div>
+                    <p class="mono text-sm mt-2">#FFFF00<br/>YELLOW</p>
+                </div>
+                <div>
+                    <div class="h-24 bg-black border-4 border-black"></div>
+                    <p class="mono text-sm mt-2">#000000<br/>BLACK</p>
+                </div>
+                <div>
+                    <div class="h-24 bg-white border-4 border-black"></div>
+                    <p class="mono text-sm mt-2">#FFFFFF<br/>WHITE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="py-12 px-4 bg-blue-600">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-white font-black text-4xl mb-8">CARDS</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white border-4 border-black">
+                    <div class="border-b-4 border-black p-4">
+                        <span class="mono text-xs">ARTICLE</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-black text-2xl mb-2">THIS IS A HEADLINE</h3>
+                        <p class="mono text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Brutalist design strips away the unnecessary.</p>
+                        <button type="button" class="inline-block mt-4 bg-black text-white px-4 py-2 font-bold hover:bg-yellow-400 hover:text-black cursor-pointer">[READ MORE]</button>
+                    </div>
+                </div>
+                <div class="bg-yellow-400 border-4 border-black">
+                    <div class="border-b-4 border-black p-4 bg-black text-white">
+                        <span class="mono text-xs">FEATURED</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-black text-2xl mb-2">ANTI-DESIGN</h3>
+                        <p class="mono text-sm">Reject the norm. Question everything. Make it ugly on purpose - or beautiful by accident.</p>
+                        <button type="button" class="inline-block mt-4 bg-black text-white px-4 py-2 font-bold hover:bg-white cursor-pointer">[EXPLORE]</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-md mx-auto">
+            <h2 class="font-black text-4xl mb-8 text-center">CONTACT</h2>
+            <div class="border-4 border-black">
+                <div class="border-b-4 border-black p-4 bg-black text-white">
+                    <span class="mono">SEND MESSAGE</span>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2">NAME:</label>
+                        <input aria-label="Name" type="text" class="w-full border-4 border-black p-3 font-mono focus:outline-none focus:bg-yellow-400" placeholder="YOUR NAME">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2">EMAIL:</label>
+                        <input aria-label="Email address" type="email" class="w-full border-4 border-black p-3 font-mono focus:outline-none focus:bg-yellow-400" placeholder="YOUR@EMAIL.COM">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2">MESSAGE:</label>
+                        <textarea aria-label="Message" class="w-full border-4 border-black p-3 font-mono h-32 focus:outline-none focus:bg-yellow-400" placeholder="YOUR MESSAGE..."></textarea>
+                    </div>
+                    <button class="w-full bg-black text-white border-4 border-black p-4 font-black text-xl hover:bg-yellow-400 hover:text-black cursor-pointer">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Component States -->
+    <section class="py-12 px-4 bg-yellow-400 border-y-4 border-black">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-black text-4xl mb-8 border-b-4 border-black pb-2">STATES + DIALOG</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white border-4 border-black p-6 space-y-8">
+                    <div>
+                        <h3 class="font-black text-xl mb-4">BUTTON STATES</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <button type="button" class="min-h-11 bg-black text-white border-4 border-black px-5 font-black hover:bg-yellow-400 hover:text-black focus:outline-none focus:ring-4 focus:ring-blue-600">PRIMARY</button>
+                            <button type="button" class="min-h-11 bg-blue-600 text-white border-4 border-black px-5 font-black hover:bg-white hover:text-black focus:outline-none focus:ring-4 focus:ring-blue-600">SECONDARY</button>
+                            <button type="button" disabled aria-live="polite" class="min-h-11 bg-gray-300 text-gray-700 border-4 border-black px-5 font-black cursor-wait flex items-center gap-2">
+                                <span class="w-4 h-4 border-4 border-gray-700 border-t-transparent rounded-full animate-spin" aria-hidden="true"></span>
+                                SAVING
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="brutal-email-state" class="block font-black mb-2">EMAIL:</label>
+                        <input id="brutal-email-state" type="email" value="NAME@" aria-invalid="true" aria-describedby="brutal-email-error" class="w-full border-4 border-red-600 p-3 font-mono focus:outline-none focus:bg-yellow-100">
+                        <p id="brutal-email-error" role="alert" class="mt-2 border-4 border-black bg-red-600 p-3 font-bold text-white">ERROR: ADD A DOMAIN, LIKE EXAMPLE.COM.</p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-blue-600 text-white border-4 border-black p-6 text-center">
+                        <svg class="w-10 h-10 mx-auto mb-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2.5" d="M4 6h16M6 6v13h12V6M9 10h6"/></svg>
+                        <h3 class="font-black text-2xl mb-2">NOTHING HERE.</h3>
+                        <p class="mono text-sm mb-5">CREATE THE FIRST ITEM. STOP WAITING.</p>
+                        <button type="button" class="min-h-11 bg-yellow-400 text-black border-4 border-black px-5 font-black hover:bg-white">[CREATE ITEM]</button>
+                    </div>
+                    <dialog open aria-labelledby="brutal-dialog-title" class="relative m-0 w-full max-w-none bg-white text-black border-4 border-black p-0">
+                        <div class="flex items-start justify-between gap-4 border-b-4 border-black bg-black p-4 text-white">
+                            <div>
+                                <h3 id="brutal-dialog-title" class="font-black text-xl">DELETE DRAFT?</h3>
+                                <p class="mono text-sm mt-1">THIS ACTION CANNOT BE UNDONE.</p>
+                            </div>
+                            <button type="button" aria-label="Close dialog preview" class="min-w-11 min-h-11 border-4 border-white font-black hover:bg-white hover:text-black">X</button>
+                        </div>
+                        <div class="flex justify-end gap-3 p-4">
+                            <button type="button" class="min-h-11 border-4 border-black bg-white px-5 font-black hover:bg-yellow-400">CANCEL</button>
+                            <button type="button" class="min-h-11 border-4 border-black bg-red-600 px-5 font-black text-white hover:bg-black">DELETE</button>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section class="py-12 px-4 bg-black text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-3 gap-8">
+                <div class="border-4 border-white p-6">
+                    <h3 class="font-black text-xl mb-4 border-b-2 border-white pb-2">BEST FOR</h3>
+                    <ul class="mono text-sm space-y-2">
+                        <li>+ Design portfolios</li>
+                        <li>+ Artistic projects</li>
+                        <li>+ Counter-culture brands</li>
+                        <li>+ Editorial/media sites</li>
+                        <li>+ Tech blogs</li>
+                    </ul>
+                </div>
+                <div class="border-4 border-white p-6">
+                    <h3 class="font-black text-xl mb-4 border-b-2 border-white pb-2">DO NOT USE FOR</h3>
+                    <ul class="mono text-sm space-y-2">
+                        <li>- Corporate environments</li>
+                        <li>- Conservative industries</li>
+                        <li>- Critical accessibility</li>
+                        <li>- Customer-facing professional</li>
+                    </ul>
+                </div>
+                <div class="border-4 border-white p-6">
+                    <h3 class="font-black text-xl mb-4 border-b-2 border-white pb-2">KEY ELEMENTS</h3>
+                    <ul class="mono text-sm space-y-2">
+                        <li>+ Stark, asymmetric composition</li>
+                        <li>+ Thick visible borders</li>
+                        <li>+ Sharp corners and raw type</li>
+                        <li>+ Primary colors and hard contrast</li>
+                        <li>+ Instant, non-polished interactions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 px-4 bg-white border-t-4 border-black">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="03-glassmorphism.html" class="font-bold hover:bg-black hover:text-white px-2">[GLASSMORPHISM]</a>
+            <a href="05-3d-hyperrealism.html" class="font-bold hover:bg-black hover:text-white px-2">[3D HYPERREALISM]</a>
+        </div>
+    </footer>
+</body>
+</html>

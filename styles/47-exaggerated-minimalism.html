@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exaggerated Minimalism - UI Style #47</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <style>* { font-family: 'Space Grotesk', sans-serif; }</style>
+</head>
+<body class="bg-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white z-50 px-12 py-8">
+        <div class="flex justify-between items-center">
+            <a href="../index.html" class="text-gray-400 hover:text-black text-sm tracking-wider">&larr; BACK</a>
+            <span class="text-xs tracking-[0.3em] text-gray-400">#47</span>
+        </div>
+    </nav>
+
+    <div class="min-h-screen flex items-center justify-center px-12">
+        <div class="max-w-5xl w-full">
+            <!-- Hero -->
+            <section class="py-32">
+                <h1 class="text-[12rem] font-light leading-none tracking-tighter text-black mb-8">
+                    Less.
+                </h1>
+                <p class="text-2xl text-gray-400 max-w-lg font-light">
+                    Extreme whitespace. Oversized typography. Bold simplicity.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <section class="px-12 py-32 bg-black text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-12 gap-8">
+                <div class="col-span-4">
+                    <span class="text-[8rem] font-light">01</span>
+                </div>
+                <div class="col-span-8 flex items-center">
+                    <div>
+                        <h2 class="text-5xl font-light mb-6">Extreme Scale</h2>
+                        <p class="text-xl text-gray-400 font-light leading-relaxed">
+                            Typography becomes architecture. Size creates hierarchy without additional elements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-12 py-32">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-12 gap-8">
+                <div class="col-span-4">
+                    <span class="text-[8rem] font-light text-gray-200">02</span>
+                </div>
+                <div class="col-span-8 flex items-center">
+                    <div>
+                        <h2 class="text-5xl font-light mb-6">Vast Space</h2>
+                        <p class="text-xl text-gray-400 font-light leading-relaxed">
+                            Whitespace isn't empty. It's intentional breathing room that amplifies what remains.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-12 py-32 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-12 gap-8">
+                <div class="col-span-4">
+                    <span class="text-[8rem] font-light text-gray-300">03</span>
+                </div>
+                <div class="col-span-8 flex items-center">
+                    <div>
+                        <h2 class="text-5xl font-light mb-6">Pure Form</h2>
+                        <p class="text-xl text-gray-400 font-light leading-relaxed">
+                            No decoration. No distraction. Only the essential elements survive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Component States -->
+    <section class="px-12 py-32 bg-black text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-12 gap-8 mb-24">
+                <div class="col-span-4">
+                    <span class="text-[8rem] font-light">04</span>
+                </div>
+                <div class="col-span-8">
+                    <h2 class="text-5xl font-light mb-12">States.</h2>
+                    <div class="space-y-16">
+                        <div>
+                            <h3 class="text-xs tracking-[0.2em] text-gray-400 mb-6">BUTTONS</h3>
+                            <div class="flex flex-wrap gap-4">
+                                <button type="button" class="min-h-11 bg-white px-8 text-sm tracking-wider text-black hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-4 focus:ring-offset-black">PRIMARY</button>
+                                <button type="button" class="min-h-11 border border-white px-8 text-sm tracking-wider text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white">SECONDARY</button>
+                                <button type="button" disabled aria-live="polite" class="min-h-11 border border-gray-700 px-8 text-sm tracking-wider text-gray-500 cursor-wait flex items-center gap-3">
+                                    <span class="w-4 h-4 border border-gray-400 border-t-transparent rounded-full animate-spin" aria-hidden="true"></span>
+                                    SAVING
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="exaggerated-email-state" class="block text-xs tracking-[0.2em] text-gray-400 mb-4">EMAIL</label>
+                            <input id="exaggerated-email-state" type="email" value="name@" aria-invalid="true" aria-describedby="exaggerated-email-error" class="w-full min-h-11 border-0 border-b-2 border-red-400 bg-transparent px-0 py-4 text-xl font-light text-white focus:outline-none focus:border-white">
+                            <p id="exaggerated-email-error" role="alert" class="mt-4 max-w-lg text-sm leading-relaxed text-red-300">Add a domain, such as example.com, to finish the address.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-16">
+                <div class="bg-white p-12 text-center text-black">
+                    <svg class="w-10 h-10 mx-auto mb-8" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 6h16M6 6v13h12V6M9 10h6"/></svg>
+                    <h3 class="text-3xl font-light mb-4">Nothing yet.</h3>
+                    <p class="text-gray-500 font-light mb-8">Create the first project. Keep only what matters.</p>
+                    <button type="button" class="min-h-11 bg-black px-8 text-sm tracking-wider text-white hover:bg-gray-800">CREATE</button>
+                </div>
+                <dialog open aria-labelledby="exaggerated-dialog-title" class="relative m-0 w-full max-w-none border-0 bg-white p-12 text-black">
+                    <div class="flex items-start justify-between gap-6 mb-12">
+                        <div><h3 id="exaggerated-dialog-title" class="text-3xl font-light">Delete project?</h3><p class="text-gray-500 font-light mt-4">This action cannot be undone.</p></div>
+                        <button type="button" aria-label="Close dialog preview" class="min-w-11 min-h-11 border border-black text-xl hover:bg-black hover:text-white">&times;</button>
+                    </div>
+                    <div class="flex justify-end gap-4">
+                        <button type="button" class="min-h-11 border border-black px-6 text-sm tracking-wider hover:bg-gray-100">CANCEL</button>
+                        <button type="button" class="min-h-11 bg-black px-6 text-sm tracking-wider text-white hover:bg-gray-800">DELETE</button>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="px-12 py-48">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-8xl font-light mb-12">Begin.</h2>
+            <button class="px-12 py-6 bg-black text-white text-lg tracking-wider hover:bg-gray-900 cursor-pointer transition-colors">
+                START PROJECT
+            </button>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="px-12 py-8 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex justify-between items-center mb-16">
+                <a href="46-dimensional-layering.html" class="text-gray-400 hover:text-black text-sm">&larr; Dimensional</a>
+                <a href="48-kinetic-typography.html" class="text-gray-400 hover:text-black text-sm">Kinetic &rarr;</a>
+            </div>
+            <div class="grid grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-xs tracking-[0.2em] text-gray-400 mb-4">BEST FOR</h3>
+                    <ul class="space-y-2 text-gray-600 font-light">
+                        <li>Luxury brands</li>
+                        <li>Architecture firms</li>
+                        <li>Art galleries</li>
+                        <li>High-end portfolios</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xs tracking-[0.2em] text-gray-400 mb-4">KEY ELEMENTS</h3>
+                    <ul class="space-y-2 text-gray-600 font-light">
+                        <li>Oversized typography</li>
+                        <li>Extreme whitespace</li>
+                        <li>Minimal color palette</li>
+                        <li>Light font weights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claymorphism - UI Style #09</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        * { font-family: 'Nunito', sans-serif; }
+        body { background: linear-gradient(135deg, #fef3f2 0%, #f0f9ff 100%); }
+        .clay {
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            border-radius: 20px;
+            border: 3px solid rgba(255,255,255,0.8);
+            box-shadow:
+                8px 8px 0 rgba(0,0,0,0.08),
+                inset -2px -2px 4px rgba(0,0,0,0.05),
+                inset 2px 2px 4px rgba(255,255,255,0.8);
+        }
+        .clay-pink {
+            background: linear-gradient(145deg, #FDBCB4, #f5a69c);
+            border: 3px solid rgba(255,255,255,0.5);
+            box-shadow:
+                8px 8px 0 rgba(253,188,180,0.5),
+                inset -2px -2px 4px rgba(0,0,0,0.1),
+                inset 2px 2px 4px rgba(255,255,255,0.6);
+        }
+        .clay-blue {
+            background: linear-gradient(145deg, #ADD8E6, #9bc5d9);
+            border: 3px solid rgba(255,255,255,0.5);
+            box-shadow:
+                8px 8px 0 rgba(173,216,230,0.5),
+                inset -2px -2px 4px rgba(0,0,0,0.1),
+                inset 2px 2px 4px rgba(255,255,255,0.6);
+        }
+        .clay-mint {
+            background: linear-gradient(145deg, #98FF98, #88ef88);
+            border: 3px solid rgba(255,255,255,0.5);
+            box-shadow:
+                8px 8px 0 rgba(152,255,152,0.5),
+                inset -2px -2px 4px rgba(0,0,0,0.1),
+                inset 2px 2px 4px rgba(255,255,255,0.6);
+        }
+        .clay-lilac {
+            background: linear-gradient(145deg, #E6E6FA, #d6d6ea);
+            border: 3px solid rgba(255,255,255,0.5);
+            box-shadow:
+                8px 8px 0 rgba(230,230,250,0.5),
+                inset -2px -2px 4px rgba(0,0,0,0.1),
+                inset 2px 2px 4px rgba(255,255,255,0.6);
+        }
+        .clay-btn {
+            transition: all 0.2s ease-out;
+        }
+        .clay-btn:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                10px 10px 0 rgba(0,0,0,0.08),
+                inset -2px -2px 4px rgba(0,0,0,0.05),
+                inset 2px 2px 4px rgba(255,255,255,0.8);
+        }
+        .clay-btn:active {
+            transform: translateY(2px);
+            box-shadow:
+                4px 4px 0 rgba(0,0,0,0.08),
+                inset -2px -2px 4px rgba(0,0,0,0.05),
+                inset 2px 2px 4px rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-4 left-4 right-4 clay z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-gray-600 hover:text-gray-900 font-semibold">&larr; Back</a>
+            <span class="font-bold text-gray-800">#09 Claymorphism</span>
+            <span class="text-gray-500">General</span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="clay-pink rounded-3xl p-12 inline-block">
+                <h1 class="text-5xl font-extrabold text-gray-800 mb-4">Soft & Playful</h1>
+                <p class="text-gray-700 text-lg">3D clay-like elements with chunky, toy-like aesthetics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Grid -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-8 text-center font-bold">Feature Cards</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="clay-blue rounded-3xl p-6 cursor-pointer hover:translate-y-[-4px] transition-transform">
+                    <div class="w-16 h-16 clay rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                        <svg class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a9 9 0 100 18h1.5a2 2 0 001.4-3.4l-.3-.3a1 1 0 01.7-1.7H17a4 4 0 004-4c0-4.7-4-8.6-9-8.6z"/><circle cx="7.5" cy="11" r="1" fill="currentColor"/><circle cx="10" cy="7.5" r="1" fill="currentColor"/><circle cx="14" cy="7.5" r="1" fill="currentColor"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Creative</h4>
+                    <p class="text-gray-600 text-center text-sm">Perfect for playful, fun interfaces</p>
+                </div>
+
+                <div class="clay-mint rounded-3xl p-6 cursor-pointer hover:translate-y-[-4px] transition-transform">
+                    <div class="w-16 h-16 clay rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-3xl">✨</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Modern</h4>
+                    <p class="text-gray-600 text-center text-sm">2020s design trend at its finest</p>
+                </div>
+
+                <div class="clay-lilac rounded-3xl p-6 cursor-pointer hover:translate-y-[-4px] transition-transform">
+                    <div class="w-16 h-16 clay rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-3xl">🧸</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Friendly</h4>
+                    <p class="text-gray-600 text-center text-sm">Approachable and welcoming UI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-8 text-center font-bold">Buttons</h3>
+            <div class="clay rounded-3xl p-8">
+                <div class="flex flex-wrap justify-center gap-6">
+                    <button class="clay-pink clay-btn rounded-2xl px-8 py-4 font-bold text-gray-800 cursor-pointer">Primary</button>
+                    <button class="clay-blue clay-btn rounded-2xl px-8 py-4 font-bold text-gray-800 cursor-pointer">Secondary</button>
+                    <button class="clay-mint clay-btn rounded-2xl px-8 py-4 font-bold text-gray-800 cursor-pointer">Success</button>
+                    <button class="clay-lilac clay-btn rounded-2xl px-8 py-4 font-bold text-gray-800 cursor-pointer">Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-8 text-center font-bold">Color Palette</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="clay-pink h-24 rounded-3xl mb-3"></div>
+                    <p class="font-bold text-gray-700">Soft Peach</p>
+                    <p class="text-sm text-gray-500">#FDBCB4</p>
+                </div>
+                <div class="text-center">
+                    <div class="clay-blue h-24 rounded-3xl mb-3"></div>
+                    <p class="font-bold text-gray-700">Baby Blue</p>
+                    <p class="text-sm text-gray-500">#ADD8E6</p>
+                </div>
+                <div class="text-center">
+                    <div class="clay-mint h-24 rounded-3xl mb-3"></div>
+                    <p class="font-bold text-gray-700">Mint</p>
+                    <p class="text-sm text-gray-500">#98FF98</p>
+                </div>
+                <div class="text-center">
+                    <div class="clay-lilac h-24 rounded-3xl mb-3"></div>
+                    <p class="font-bold text-gray-700">Lilac</p>
+                    <p class="text-sm text-gray-500">#E6E6FA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="py-12 px-6">
+        <div class="max-w-md mx-auto">
+            <div class="clay rounded-3xl p-8">
+                <h3 class="text-2xl font-bold text-gray-800 text-center mb-6">Join Us!</h3>
+                <div class="space-y-4">
+                    <input aria-label="Name" type="text" placeholder="Your Name" class="w-full clay-lilac rounded-2xl px-6 py-4 font-semibold text-gray-700 placeholder-gray-500 border-none focus:outline-none">
+                    <input aria-label="Email address" type="email" placeholder="Email Address" class="w-full clay-blue rounded-2xl px-6 py-4 font-semibold text-gray-700 placeholder-gray-500 border-none focus:outline-none">
+                    <button class="w-full clay-mint clay-btn rounded-2xl px-8 py-4 font-bold text-gray-800 cursor-pointer">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle & Progress -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-8 text-center font-bold">Controls</h3>
+            <div class="clay rounded-3xl p-8">
+                <div class="flex flex-wrap justify-center items-center gap-12">
+                    <!-- Toggle -->
+                    <button type="button" aria-label="Enable notifications" aria-pressed="false" class="clay-pink rounded-full w-20 h-10 p-1 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        <div class="clay w-8 h-8 rounded-full"></div>
+                    </button>
+
+                    <!-- Progress Bar -->
+                    <div class="w-48">
+                        <div class="clay rounded-full h-6 p-1">
+                            <div class="clay-mint h-4 rounded-full w-3/4"></div>
+                        </div>
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="flex gap-2" aria-label="Rating: 3 out of 5">
+                        <button type="button" aria-label="Rate 1 out of 5" aria-pressed="true" class="clay-pink w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer text-pink-700"><svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.8l2.35 4.76 5.25.76-3.8 3.7.9 5.23L10 13.78l-4.7 2.47.9-5.23-3.8-3.7 5.25-.76L10 1.8z"/></svg></button>
+                        <button type="button" aria-label="Rate 2 out of 5" aria-pressed="true" class="clay-pink w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer text-pink-700"><svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.8l2.35 4.76 5.25.76-3.8 3.7.9 5.23L10 13.78l-4.7 2.47.9-5.23-3.8-3.7 5.25-.76L10 1.8z"/></svg></button>
+                        <button type="button" aria-label="Rate 3 out of 5" aria-pressed="true" class="clay-pink w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer text-pink-700"><svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.8l2.35 4.76 5.25.76-3.8 3.7.9 5.23L10 13.78l-4.7 2.47.9-5.23-3.8-3.7 5.25-.76L10 1.8z"/></svg></button>
+                        <button type="button" aria-label="Rate 4 out of 5" aria-pressed="false" class="clay w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer text-gray-500"><svg class="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><path d="M10 1.8l2.35 4.76 5.25.76-3.8 3.7.9 5.23L10 13.78l-4.7 2.47.9-5.23-3.8-3.7 5.25-.76L10 1.8z"/></svg></button>
+                        <button type="button" aria-label="Rate 5 out of 5" aria-pressed="false" class="clay w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer text-gray-500"><svg class="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 20"><path d="M10 1.8l2.35 4.76 5.25.76-3.8 3.7.9 5.23L10 13.78l-4.7 2.47.9-5.23-3.8-3.7 5.25-.76L10 1.8z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Component States -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-8 text-center font-bold">Component States &amp; Dialog</h3>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="clay rounded-3xl p-8 space-y-8">
+                    <div>
+                        <h4 class="font-bold text-gray-800 mb-5">Button States</h4>
+                        <div class="flex flex-wrap gap-4">
+                            <button type="button" class="min-h-11 clay-mint clay-btn rounded-2xl px-6 font-bold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-500">Primary</button>
+                            <button type="button" class="min-h-11 clay-blue clay-btn rounded-2xl px-6 font-bold text-gray-800 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">Secondary</button>
+                            <button type="button" disabled aria-live="polite" class="min-h-11 clay rounded-2xl px-6 font-bold text-gray-500 cursor-wait flex items-center gap-2">
+                                <span class="w-4 h-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" aria-hidden="true"></span>
+                                Saving
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="clay-email-state" class="block text-sm font-bold text-gray-700 mb-2">Email</label>
+                        <input id="clay-email-state" type="email" value="name@" aria-invalid="true" aria-describedby="clay-email-error" class="w-full clay-pink rounded-2xl px-5 py-4 text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <p id="clay-email-error" role="alert" class="mt-3 rounded-2xl bg-red-700 px-4 py-3 text-sm font-semibold text-white">Add a domain, such as example.com, to finish the address.</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="clay-blue rounded-3xl p-8 text-center">
+                        <div class="clay w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center text-blue-700" aria-hidden="true"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M6 6v13h12V6M9 10h6"/></svg></div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">No activities yet</h4>
+                        <p class="text-sm text-gray-700 mb-5">Add a playful activity to begin building today’s routine.</p>
+                        <button type="button" class="min-h-11 clay-mint clay-btn rounded-2xl px-6 font-bold text-gray-800 cursor-pointer">Add activity</button>
+                    </div>
+                    <dialog open aria-labelledby="clay-dialog-title" class="relative m-0 w-full max-w-none clay rounded-3xl border-0 bg-[#F0E6FF] p-6 text-gray-800">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <div><h4 id="clay-dialog-title" class="text-lg font-bold">Remove activity?</h4><p class="text-sm text-gray-700 mt-1">Your completed streak stays, but this activity leaves the list.</p></div>
+                            <button type="button" aria-label="Close dialog preview" class="min-w-11 min-h-11 clay-pink rounded-2xl font-bold cursor-pointer">&times;</button>
+                        </div>
+                        <div class="flex justify-end gap-4">
+                            <button type="button" class="min-h-11 clay rounded-2xl px-5 font-bold text-gray-700 cursor-pointer">Cancel</button>
+                            <button type="button" class="min-h-11 clay-pink rounded-2xl px-5 font-bold text-red-800 cursor-pointer">Remove</button>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="clay rounded-3xl p-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-4 font-bold">Best For</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>Educational apps</li>
+                            <li>Children's apps</li>
+                            <li>SaaS platforms</li>
+                            <li>Creative tools</li>
+                            <li>Onboarding flows</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-500 text-sm uppercase tracking-widest mb-4 font-bold">Characteristics</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>Light Mode: Full</li>
+                            <li>Dark Mode: Partial</li>
+                            <li>Accessibility: Ensure 4.5:1</li>
+                            <li>Conversion: High</li>
+                            <li>Complexity: Medium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6">
+        <div class="max-w-5xl mx-auto clay rounded-2xl px-6 py-4 flex justify-between items-center">
+            <a href="08-accessible.html" class="text-gray-600 hover:text-gray-900 font-semibold">&larr; Accessible</a>
+            <a href="10-aurora-ui.html" class="text-gray-600 hover:text-gray-900 font-semibold">Aurora UI &rarr;</a>
+        </div>
+    </footer>
+</body>
+</html>

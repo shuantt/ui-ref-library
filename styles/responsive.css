@@ -1,0 +1,192 @@
+/* Shared mobile safety net for the standalone style demos. */
+@media (max-width: 767px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  nav.fixed {
+    position: relative !important;
+    inset: auto !important;
+    margin: 0 !important;
+  }
+
+  body > div.fixed.bottom-4 {
+    position: static !important;
+    inset: auto !important;
+    width: auto;
+    max-width: none !important;
+    margin: 1rem;
+  }
+
+  nav > div,
+  header > div,
+  footer > div {
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  nav > div {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    justify-items: center;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  body > .flex {
+    display: block;
+  }
+
+  body > .flex > aside {
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  main,
+  section,
+  article,
+  aside,
+  footer,
+  .grid,
+  .grid > *,
+  .flex,
+  .flex > * {
+    min-width: 0;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: none !important;
+    height: auto !important;
+  }
+
+  .grid > * {
+    grid-column: auto / span 1 !important;
+    grid-row: auto / span 1 !important;
+  }
+
+  .flex.gap-3,
+  .flex.gap-4,
+  .flex.gap-6,
+  .flex.gap-8,
+  .flex.gap-12 {
+    flex-wrap: wrap;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: anywhere;
+  }
+
+  h1.component-system-title {
+    font-size: clamp(1.5rem, 7.5vw, 2.25rem) !important;
+    line-height: 0.98 !important;
+    overflow-wrap: normal;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+
+  .p-12 {
+    padding: 2rem !important;
+  }
+
+  .text-7xl,
+  .text-8xl,
+  .text-9xl,
+  .text-\[8rem\],
+  .text-\[10rem\],
+  .text-\[12rem\],
+  .text-\[15rem\] {
+    font-size: clamp(3rem, 16vw, 5rem) !important;
+    line-height: 0.95 !important;
+  }
+
+  .text-6xl {
+    font-size: clamp(2.5rem, 13vw, 3.75rem) !important;
+    line-height: 1 !important;
+  }
+
+  .card-3d.inline-block {
+    display: block;
+    width: 100%;
+  }
+
+  .realistic-shadow,
+  .depth-shadow {
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.55) !important;
+  }
+
+  .neon-blue,
+  .neon-pink,
+  .neon-cyan,
+  .glow {
+    text-shadow: 0 0 8px currentColor !important;
+  }
+
+  h1 > .neon-blue,
+  h1 > .neon-pink,
+  h1 > .neon-cyan {
+    display: block;
+  }
+
+  .brutal-shadow,
+  .brutal-shadow-lg {
+    box-shadow: 4px 4px 0 #000 !important;
+  }
+
+  .perspective-1000 {
+    overflow: hidden;
+  }
+
+  body > div.fixed.left-0.right-0 {
+    left: 0 !important;
+    right: auto !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
+  body > .fixed.inset-0,
+  body > div > .fixed.inset-0 {
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
