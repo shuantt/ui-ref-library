@@ -168,7 +168,7 @@ RWD 檢查需要本機已安裝 Chrome 或 Edge。需要留下指定頁面的完
 
 本專案基於 [joshhu/uitest](https://github.com/joshhu/uitest) 延伸調整；原始專案與 57 個樣板的來源歸屬於 `joshhu/uitest`，不是本 repository 的原創內容。上游連結與原作者說明應持續保留。
 
-上游目前未在 GitHub repository 宣告授權；本 README 不構成對原始內容的另行授權。使用、修改或散布前，請以 `joshhu/uitest` 的最新授權與原作者說明為準。
+上游 README 明確宣告採用 MIT License，允許自由使用、修改與分享；使用或散布時，仍應保留原作者歸屬與相關授權說明，並以 `joshhu/uitest` 的最新內容為準。
 
 `shuantt/ui-ref-library` 主要新增 RWD 修正、內容與路徑整理、風格型頁面的元件狀態、首頁風格說明／AI Prompt，以及自動完整性與瀏覽器檢查。這些新增內容不取代或抹除原始作者的貢獻。
 
