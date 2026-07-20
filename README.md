@@ -5,7 +5,7 @@
 ![UI Styles](https://img.shields.io/badge/Styles-57-blue)
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-CDN-38B2AC)
-[![Source](https://img.shields.io/badge/Source-shuantt%2Fuitest-181717)](https://github.com/shuantt/uitest)
+[![Source](https://img.shields.io/badge/Source-joshhu%2Fuitest-181717)](https://github.com/joshhu/uitest)
 
 ## 預覽
 
@@ -122,19 +122,6 @@ xdg-open index.html  # Linux
 start index.html     # Windows
 ```
 
-### 部署到 Netlify
-
-1. 前往 [Netlify Drop](https://app.netlify.com/drop)
-2. 拖放整個資料夾
-3. 完成！
-
-### 部署到 GitHub Pages
-
-1. Fork 此 repo
-2. 到 Settings → Pages
-3. Source 選擇 `main` branch
-4. 儲存後等待部署完成
-
 ## 專案結構
 
 ```
@@ -179,9 +166,11 @@ RWD 檢查需要本機已安裝 Chrome 或 Edge。需要留下指定頁面的完
 
 ## 來源與授權
 
-本專案是基於 [shuantt/uitest](https://github.com/shuantt/uitest) 延伸調整的 fork。原始樣板的來源說明與上游連結應持續保留；使用與散布時，請先查閱並遵循原始專案提供的授權與著作權說明。
+本專案基於 [joshhu/uitest](https://github.com/joshhu/uitest) 延伸調整；原始專案與 57 個樣板的來源歸屬於 `joshhu/uitest`，不是本 repository 的原創內容。上游連結與原作者說明應持續保留。
 
-此 fork 主要新增 RWD 修正、內容與路徑整理、風格型頁面的元件狀態、首頁風格說明／AI Prompt，以及自動完整性與瀏覽器檢查。這些新增內容不取代或抹除原始作者的貢獻。
+上游目前未在 GitHub repository 宣告授權；本 README 不構成對原始內容的另行授權。使用、修改或散布前，請以 `joshhu/uitest` 的最新授權與原作者說明為準。
+
+`shuantt/ui-ref-library` 主要新增 RWD 修正、內容與路徑整理、風格型頁面的元件狀態、首頁風格說明／AI Prompt，以及自動完整性與瀏覽器檢查。這些新增內容不取代或抹除原始作者的貢獻。
 
 ## 致謝
 
