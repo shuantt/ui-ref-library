@@ -7,7 +7,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-CDN-38B2AC)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/license/mit)
 
-## 本 fork 的調整
+## 與 fork 專案不同的調整
 
 - 修正樣板內的錯置文字、缺漏內容與錯誤路徑。
 - 補齊風格型頁面的按鈕、表單、狀態與互動元件示意。
@@ -18,9 +18,7 @@
 
 ## 專案定位
 
-這是一套持續擴充的個人參考庫，不是 UI 風格的完整清單，也不是 Foundry OS 的風格白名單。
-
-在 Foundry OS 的工作流中，它可以提供具體的風格示意、元件語彙與 Prompt，協助 AI 理解偏好的方向；實際提案仍應結合專案需求、本庫以外的設計知識與新的設計可能，整理出適合客戶討論的方案。
+這是一套持續擴充的個人參考庫，用於 Foundry OS 的工作流中，提供具體的風格示意、元件語彙與 Prompt，協助 AI 理解偏好的方向；實際提案仍應結合專案需求、本庫以外的設計知識與新的設計可能，整理出適合客戶討論的方案。
 
 ## 如何使用
 
