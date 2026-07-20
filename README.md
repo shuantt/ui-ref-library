@@ -1,13 +1,13 @@
 # UI Reference Library
 
-> 個人 UI 風格與元件參考庫，用 57 個可直接瀏覽的 HTML 頁面，協助設計討論、風格提案與 AI 協作。
+> 本專案 fork 自 [joshhu/uitest](https://github.com/joshhu/uitest)，以原有的 57 個 HTML 樣板為基礎，整理成用於設計討論、風格提案與 AI 協作的個人 UI 參考庫。
 
 ![UI Styles](https://img.shields.io/badge/Styles-57-blue)
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-CDN-38B2AC)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/license/mit)
 
-## 這個版本調整了什麼
+## 本 fork 的調整
 
 - 修正樣板內的錯置文字、缺漏內容與錯誤路徑。
 - 補齊風格型頁面的按鈕、表單、狀態與互動元件示意。
